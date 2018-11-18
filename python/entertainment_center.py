@@ -1,6 +1,13 @@
 import media
 import fresh_tomatoes
 
+"""
+declare favorite movies, with 4 args each:
+title (movie's title)
+story_line (description of the film story)
+poster_url (url to poster image)
+trailer_url (url to youtube trailer)
+"""
 days_of_summer = media.Movie(
                             "500 Days of Summer",
                             "Tom (Joseph Gordon-Levitt), greeting-card writer and hopeless romantic, is caught completely off-guard when his girlfriend, Summer (Zooey Deschanel), suddenly dumps him. He reflects on their 500 days together to try to figure out where their love affair went sour, and in doing so, Tom rediscovers his true passions in life.",
@@ -57,5 +64,8 @@ bahubali = media.Movie(
                       "https://www.youtube.com/watch?v=qD-6d8Wo3do"
                       )
 
-movies = [days_of_summer, amazing_spider_man, titanic, jungle_book,slumdog_millionaire, dangal, the_man_who_knew_infinity, bahubali]
+# assign individual movies to movies array
+movies = [days_of_summer, amazing_spider_man, titanic, jungle_book, slumdog_millionaire, dangal, the_man_who_knew_infinity, bahubali]
+
+# call movie trailer page method and pass movies array
 fresh_tomatoes.open_movies_page(movies)
